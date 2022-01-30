@@ -15,7 +15,7 @@
         {
             this._articleArray = articleArray;
         }
-
+        
         public Article this[int index]
         {
             get { return _articleArray[index]; }
@@ -28,13 +28,17 @@
             {
                 Article articleCheck = CheckExist(index);
                 if (articleCheck != null)
-                { return articleCheck.Show(); }
+                {
+                    return articleCheck.Show();
+                }
                 else
-                { return "Такого товара нет."; }
+                { 
+                    return "Такого товара нет."; 
+                }
             }
         }
 
-        Article CheckExist(string title)
+        private Article CheckExist(string title)
         {
             for (int i = 0; i < _articleArray.Length; i++)
             {
