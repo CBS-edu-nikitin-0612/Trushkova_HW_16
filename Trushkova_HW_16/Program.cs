@@ -11,7 +11,7 @@ while (true)
         uint lengthArray = Convert.ToUInt32(Console.ReadLine());
         if (lengthArray > 0)
         {
-            ClassArray array = new ClassArray(lengthArray);
+            ClassArray array = new (lengthArray);
             Console.WriteLine("Введите элементы массива:\n");
             for (int i = 0; i < lengthArray; i++)
             {
