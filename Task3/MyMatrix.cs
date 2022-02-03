@@ -1,7 +1,4 @@
-﻿using Task3;
-using Task2;
-
-namespace Task3
+﻿namespace Task3
 {
     internal class MyMatrix
     {
